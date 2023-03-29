@@ -1,0 +1,40 @@
+---
+title: Digitallil
+---
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {# <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet"> #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;900&display=swap" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <title>Digitallil | {{ title }}</title>
+</head>
+<body class="font-figtree min-h-screen bg-secondary text-white overflow-x-hidden">
+  {% include 'layout/header.njk' %}
+
+  <main>
+    <div>
+      {{ content | safe }}
+    </div>
+
+    <footer>
+      <h3>Let's chat<span>.</span></h3>
+      <p>Ready to take your marketing to the next level? Contact us today to learn how we can help.</p>
+
+      {% for method in contact %}
+        <a href="{{ method.href }}">
+          <span>Icon</span>
+          <span>{{ method.text }}</span>
+        </a>
+      {% endfor %}
+    </footer>
+  </main>
+</body>
+</html>

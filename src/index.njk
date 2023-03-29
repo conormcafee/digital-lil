@@ -1,0 +1,53 @@
+---
+layout: layout/base.njk
+title: Home
+---
+
+<section class="px-8 md-px-32 py-16 [ max-w-7xl mx-auto ]">
+  <article class="max-w-xl">
+    <h1 class="font-black text-5xl leading-snug">Driving and converting traffic using your online presence<span class="text-accent">.<span></h1>
+    <p class="text-secondary-light text-3xl leading-snug [ mt-4 ]">Digital Lil leverages the latest digital marketing techniques and technologies.</p>
+
+    <a href="/" class="text-accent text-xl font-black leading-snug border-b-2 border-accent [ mt-6 inline-block ]">More about Digital Lil</a>
+  </article>
+</section>
+
+{# Image and Logo Section #}
+
+{# Services #}
+
+<section class="px-8 md-px-32 py-16 [ max-w-7xl mx-auto ]">
+  <article class="max-w-md mb-16">
+    <h2 class="font-black text-3xl leading-snug">Services<span class="text-accent">.</span></h2>
+    <p class="text-secondary-light text-xl leading-snug">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet.</p>
+  </article>
+
+  <section class="relative">
+    
+    <div aria-hidden="true" class="hidden md:block absolute h-[calc(50%-1rem)] w-full -left-[calc(100%+2rem)] bg-white bg-opacity-10 shadow-xl rounded-tl-2xl rounded-bl-2xl rounded-br-2xl"></div>
+    <div aria-hidden="true" class="hidden md:block absolute h-[calc(50%-1rem)] w-full -left-[calc(100%+2rem)] top-[calc(50%+1rem)] bg-white bg-opacity-10 shadow-xl rounded-tl-2xl rounded-bl-2xl rounded-br-2xl"></div>
+    
+    <ul class="grid md:grid-cols-2 gap-8">
+      {% for service in services %}
+        <li class="flex gap-4 bg-white shadow-xl p-4 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl">
+          <aside>
+            <div class="h-16 w-16 bg-accent"></div>
+          </aside>
+          <section class="flex flex-col justify-between gap-4">
+            <header class="flex flex-col gap-2">
+              <span class="block font-black text-xl leading-snug text-secondary max-w-[150px]">{{ service.name }}</span>
+              <span class="block text-secondary-light">{{ service.intro }}</span>
+            </header>
+            <footer>
+              <a href="/" class="self-start text-accent font-black leading-snug border-b-2 border-accent">{{ service.cta }}</a>
+            </footer>
+          </section>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div aria-hidden="true" class="hidden md:block absolute h-[calc(50%-1rem)] w-full -right-[calc(100%+2rem)] top-0 bg-white bg-opacity-10 shadow-xl rounded-tl-2xl rounded-bl-2xl rounded-br-2xl"></div>
+    <div aria-hidden="true" class="hidden md:block absolute h-[calc(50%-1rem)] w-full -right-[calc(100%+2rem)] top-[calc(50%+1rem)] bg-white bg-opacity-10 shadow-xl rounded-tl-2xl rounded-bl-2xl rounded-br-2xl"></div>
+
+  </section>
+</section>
