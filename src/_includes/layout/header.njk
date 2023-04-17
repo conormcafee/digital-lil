@@ -4,7 +4,7 @@
       {% include "../../assets/svg/nav-logo.svg" %}
     </a>
     {% for link in navigation %}
-      <a href="{{ link.href }}" class="font-medium text-secondary hover:text-accent">{{ link.label }}</a>
+      <a href="{{ link.href }}" class="font-medium text-secondary hover:text-accent text-sm md:text-base">{{ link.label }}</a>
     {% endfor %}
   </nav>
 </header>

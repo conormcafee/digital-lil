@@ -3,20 +3,30 @@ layout: layout/base.njk
 title: Home
 ---
 
-<section class="px-8 md-px-32 py-16 [ max-w-7xl mx-auto ]">
+<section class="px-8 py-8 md:py-16 [ max-w-7xl mx-auto ]">
   <article class="max-w-xl">
-    <h1 class="font-black text-5xl leading-snug">Driving and converting traffic using your online presence<span class="text-accent">.<span></h1>
-    <p class="text-secondary-light text-3xl leading-snug [ mt-4 ]">Digital Lil leverages the latest digital marketing techniques and technologies.</p>
+    <h1 class="font-black text-3xl md:text-5xl leading-snug">Driving and converting traffic using your online presence<span class="text-accent">.<span></h1>
+    <p class="text-secondary-light text-xl md:text-3xl leading-snug [ mt-4 ]">Digital Lil leverages the latest digital marketing techniques and technologies.</p>
 
-    <a href="/" class="text-accent text-xl font-black leading-snug border-b-2 border-accent [ mt-6 inline-block ]">More about Digital Lil</a>
+    <a href="/" class="text-accent text-lg md:text-xl font-black leading-snug border-b-2 border-accent [ mt-6 inline-block ]">More about Digital Lil</a>
   </article>
 </section>
 
 {# Image and Logo Section #}
 
+<section class="grid md:grid-cols-3 gap-8 md:gap-16 lg:gap-28 py-8 md:py-16">
+  <img src="/assets/images/example-portrait.jpg" alt="Example Portrait" class="object-cover h-96 rounded-lg" />
+
+  <div class="bg-accent h-96 lg:scale-125 [ flex items-center justify-center ][ rounded-lg ]">
+    <span>Logo</span>
+  </div>
+
+  <img src="/assets/images/example-portrait.jpg" alt="Example Portrait" class="[ hidden md:block ][ object-cover h-96 rounded-lg ]" />
+</section>
+
 {# Services #}
 
-<section class="px-8 md-px-32 py-16 [ max-w-7xl mx-auto ]">
+<section class="px-8 py-8 md:py-16 [ max-w-7xl mx-auto ]">
   <article class="max-w-md mb-16">
     <h2 class="font-black text-3xl leading-snug">Services<span class="text-accent">.</span></h2>
     <p class="text-secondary-light text-xl leading-snug">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet.</p>
