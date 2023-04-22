@@ -1,10 +1,11 @@
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { Box, Heading, Highlight, Text } from "@chakra-ui/layout";
+import { Heading, Highlight, Text } from "@chakra-ui/layout";
 import { Link } from "@chakra-ui/next-js";
+import React from "react";
 
 export const Hero: React.FC = () => {
   return (
-    <Box py={16}>
+    <React.Fragment>
       <Heading>
         Driving and converting traffic using your online presence
         <Highlight query="." styles={{ color: "accent.base" }}>
@@ -17,9 +18,9 @@ export const Hero: React.FC = () => {
         technologies.
       </Text>
 
-      <Link href="/about">
+      <Link href="/about" variant="common">
         More about Digital Lil <ChevronRightIcon />
       </Link>
-    </Box>
+    </React.Fragment>
   );
 };

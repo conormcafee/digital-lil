@@ -1,3 +1,4 @@
+import { SERVICES } from "@/constants";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/next-js";
 import {
@@ -11,33 +12,12 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-const services = [
-  {
-    title: "Social Media Management",
-    intro: "Let us manage, run & build your brand voice and awareness.",
-  },
-  {
-    title: "Meta Platform Paid Ads",
-    intro:
-      "Target highly specific, pre-defined audiences anywhere in the world.",
-  },
-  {
-    title: "Social media training",
-    intro: "Let us manage, run & build your brand voice and awareness.",
-  },
-  {
-    title: "Email Marketing",
-    intro: "Reach the audience who have already engaged with your brand.",
-  },
-];
-
 export const Services: React.FC = () => {
   return (
     <React.Fragment>
       <Heading as="h2" size="lg">
-        Services
         <Highlight query="." styles={{ color: "accent.base" }}>
-          .
+          Services.
         </Highlight>
       </Heading>
 
@@ -50,7 +30,7 @@ export const Services: React.FC = () => {
       </Text>
 
       <Grid templateColumns={{ md: "1fr 1fr" }} gap={8}>
-        {services.map((service, idx) => (
+        {SERVICES.map((service, idx) => (
           <GridItem key={idx}>
             <Card bg="white" p={4}>
               <Box w={12} h={12} bg="accent.base"></Box>
@@ -61,7 +41,7 @@ export const Services: React.FC = () => {
                 <Text color="secondary.dark" mb={8}>
                   {service.intro}
                 </Text>
-                <Link href="/">
+                <Link href="/" variant="common">
                   Find out more <ChevronRightIcon />
                 </Link>
               </Box>
