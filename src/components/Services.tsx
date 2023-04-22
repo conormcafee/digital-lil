@@ -1,5 +1,14 @@
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/next-js";
-import { Grid, GridItem, Heading, Highlight, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Card,
+  Grid,
+  GridItem,
+  Heading,
+  Highlight,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
 
 const services = [
@@ -40,14 +49,23 @@ export const Services: React.FC = () => {
         </Highlight>
       </Text>
 
-      <Grid templateColumns="1fr 1fr" gap={8}>
+      <Grid templateColumns={{ md: "1fr 1fr" }} gap={8}>
         {services.map((service, idx) => (
-          <GridItem key={idx} bg="white" p={4}>
-            <Heading as="h3" size="md" color="secondary.base">
-              {service.title}
-            </Heading>
-            <Text mb={4}>{service.intro}</Text>
-            <Link href="/">Find out more</Link>
+          <GridItem key={idx}>
+            <Card bg="white" p={4}>
+              <Box w={12} h={12} bg="accent.base"></Box>
+              <Box flex="2">
+                <Heading as="h3" size="md" color="secondary.base" mb={2}>
+                  {service.title}
+                </Heading>
+                <Text color="secondary.dark" mb={8}>
+                  {service.intro}
+                </Text>
+                <Link href="/">
+                  Find out more <ChevronRightIcon />
+                </Link>
+              </Box>
+            </Card>
           </GridItem>
         ))}
       </Grid>
