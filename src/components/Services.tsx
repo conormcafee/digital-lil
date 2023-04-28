@@ -10,6 +10,7 @@ import {
   Highlight,
   Text,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import React from "react";
 
 export const Services: React.FC = () => {
@@ -33,7 +34,15 @@ export const Services: React.FC = () => {
         {SERVICES.map((service, idx) => (
           <GridItem key={idx}>
             <Card bg="white" p={4}>
-              <Box w={12} h={12} bg="accent.base"></Box>
+              <Box as="figure">
+                <Image
+                  src={service.icon.url}
+                  width={service.icon.width}
+                  height={service.icon.height}
+                  alt={`A digital lil logo mark for ${service.title}`}
+                />
+              </Box>
+
               <Box flex="2">
                 <Heading as="h3" size="md" color="secondary.base" mb={2}>
                   {service.title}

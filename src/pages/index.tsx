@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <Layout pageTitle="Digital Lil">
       <Box
-        bgImage="/assets/example-portrait.jpg"
+        bgImage="/assets/pexels-andrew-neel-3178818.jpg"
         bgColor="secondary.base"
         bgSize="cover"
         bgBlendMode="overlay"
-        bgPosition="top"
+        bgPosition="center"
         position="relative"
       >
         <Box

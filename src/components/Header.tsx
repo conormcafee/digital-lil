@@ -10,11 +10,14 @@ export const Header: React.FC = () => {
         display="inline-flex"
         as="nav"
         alignItems="center"
-        gap={4}
-        bg="white"
-        py={2}
-        px={4}
-        rounded="3xl"
+        gap={6}
+        bg="whiteAlpha.900"
+        borderColor="white"
+        shadow="2xl"
+        borderWidth={2}
+        py={3}
+        px={8}
+        rounded="full"
       >
         <Link href="/" variant="navbar">
           <Image

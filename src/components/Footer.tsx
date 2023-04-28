@@ -2,6 +2,7 @@ import { FOOTER_LINKS } from "@/constants";
 import { Heading, Highlight } from "@chakra-ui/layout";
 import { Link } from "@chakra-ui/next-js";
 import { Box, Container, Flex, Text } from "@chakra-ui/react";
+import Image from "next/image";
 
 export const Footer: React.FC = () => {
   return (
@@ -20,10 +21,19 @@ export const Footer: React.FC = () => {
           </Highlight>
         </Text>
 
-        <Flex gap={24}>
+        <Flex direction={{ sm: "column", lg: "row" }} gap={24}>
           {FOOTER_LINKS.map((link, idx) => (
             <Flex key={idx} gap={4} alignItems="center">
-              <Box w={12} h={12} bg="accent.base"></Box>
+              {link.icon ? (
+                <Box as="figure">
+                  <Image
+                    src={link.icon.url}
+                    width={link.icon.width}
+                    height={link.icon.height}
+                    alt={`A digital lil logo mark for ${link.text}`}
+                  />
+                </Box>
+              ) : null}
               <Link href={link.url} variant="footer">
                 {link.text}
               </Link>
