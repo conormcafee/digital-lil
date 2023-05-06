@@ -1,5 +1,4 @@
 import { SERVICES } from "@/constants";
-import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/next-js";
 import {
   Box,
@@ -50,8 +49,9 @@ export const Services: React.FC = () => {
                 <Text color="secondary.dark" mb={8}>
                   {service.intro}
                 </Text>
-                <Link href="/" variant="common">
-                  Find out more <ChevronRightIcon />
+
+                <Link variant="common" href={`/services/${service.slug}`}>
+                  Find out more
                 </Link>
               </Box>
             </Card>

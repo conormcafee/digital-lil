@@ -7,9 +7,8 @@ export const Hero: React.FC = () => {
   return (
     <React.Fragment>
       <Heading>
-        Driving and converting traffic using your online presence
         <Highlight query="." styles={{ color: "accent.base" }}>
-          .
+          Driving and converting traffic using your online presence.
         </Highlight>
       </Heading>
 

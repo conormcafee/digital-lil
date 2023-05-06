@@ -10,8 +10,16 @@ export type NavigationLink = {
   icon?: WordmarkIcon;
 };
 
+export type ServiceFeature = {
+  title: string;
+  body: string;
+};
+
 export type Service = {
+  slug: string;
   title: string;
   intro: string;
   icon: WordmarkIcon;
+  body: string;
+  features: ServiceFeature[];
 };

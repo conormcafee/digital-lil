@@ -29,6 +29,7 @@ export const FOOTER_LINKS: NavigationLink[] = [
 
 export const SERVICES: Service[] = [
   {
+    slug: "social-media-management",
     title: "Social Media Management",
     intro: "Let us manage, run & build your brand voice and awareness.",
     icon: {
@@ -36,8 +37,24 @@ export const SERVICES: Service[] = [
       height: 60,
       width: 60,
     },
+    body: `Let us take the stress out of your Social Media Management,  by taking over the set-up (if required) and the day to day running of your platforms. This includes creating posts and stories, writing captions, advance scheduling of posts, and engaging with your audience.`,
+    features: [
+      {
+        title: "Set up",
+        body: `If required, we will  set up the social media accounts best suited for your business.`,
+      },
+      {
+        title: "Day to day running",
+        body: `Let’s us take over the day to day running of your social platforms to allow you to focus fully on your business.`,
+      },
+      {
+        title: "Content creation",
+        body: `Creating images and video / reels for posts, and also longer form content creation such as Blog Writing for your Online Blog or social media platforms`,
+      },
+    ],
   },
   {
+    slug: "meta-platform-paid-ads",
     title: "Meta Platform Paid Ads",
     intro:
       "Target highly specific, pre-defined audiences anywhere in the world.",
@@ -46,8 +63,11 @@ export const SERVICES: Service[] = [
       height: 60,
       width: 60,
     },
+    body: "",
+    features: [],
   },
   {
+    slug: "social-media-training",
     title: "Social media training",
     intro: "Let us manage, run & build your brand voice and awareness.",
     icon: {
@@ -55,8 +75,11 @@ export const SERVICES: Service[] = [
       height: 60,
       width: 60,
     },
+    body: "",
+    features: [],
   },
   {
+    slug: "email-marketing",
     title: "Email Marketing",
     intro: "Reach the audience who have already engaged with your brand.",
     icon: {
@@ -64,5 +87,7 @@ export const SERVICES: Service[] = [
       height: 60,
       width: 60,
     },
+    body: "",
+    features: [],
   },
 ];

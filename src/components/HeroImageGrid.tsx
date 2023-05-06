@@ -16,13 +16,19 @@ export const HeroImageGrid: React.FC = () => {
           rounded="2xl"
           py={8}
         >
-          <Image
-            src="/assets/digital-lil-white.svg"
-            width={330}
-            height={176}
-            alt="A white version of the Digital Lil logo."
-            style={{ borderRadius: "8px" }}
-          />
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            boxSize={{ sm: 150, lg: 330 }}
+          >
+            <Image
+              src="/assets/digital-lil-white.svg"
+              width={330}
+              height={176}
+              alt="A white version of the Digital Lil logo."
+            />
+          </Box>
         </Center>
       </GridItem>
 

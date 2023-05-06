@@ -1,7 +1,7 @@
 import { FOOTER_LINKS } from "@/constants";
 import { Heading, Highlight } from "@chakra-ui/layout";
 import { Link } from "@chakra-ui/next-js";
-import { Box, Container, Flex, Text } from "@chakra-ui/react";
+import { Box, Center, Container, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 export const Footer: React.FC = () => {
@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
           </Highlight>
         </Text>
 
-        <Flex direction={{ sm: "column", lg: "row" }} gap={24}>
+        <Flex direction={{ sm: "column", lg: "row" }} gap={24} mb={16}>
           {FOOTER_LINKS.map((link, idx) => (
             <Flex key={idx} gap={4} alignItems="center">
               {link.icon ? (
@@ -40,6 +40,15 @@ export const Footer: React.FC = () => {
             </Flex>
           ))}
         </Flex>
+
+        <Center>
+          <Image
+            src="/svg/digital-lil-logo-white.svg"
+            width={126}
+            height={67}
+            alt="A white version of the Digital Lil logo."
+          />
+        </Center>
       </Box>
     </Container>
   );
