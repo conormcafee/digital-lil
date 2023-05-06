@@ -21,7 +21,11 @@ export const Footer: React.FC = () => {
           </Highlight>
         </Text>
 
-        <Flex direction={{ sm: "column", lg: "row" }} gap={24} mb={16}>
+        <Flex
+          direction={{ base: "column", lg: "row" }}
+          gap={{ base: 16, lg: 24 }}
+          mb={16}
+        >
           {FOOTER_LINKS.map((link, idx) => (
             <Flex key={idx} gap={4} alignItems="center">
               {link.icon ? (

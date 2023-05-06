@@ -20,7 +20,7 @@ export const HeroImageGrid: React.FC = () => {
             display="flex"
             alignItems="center"
             justifyContent="center"
-            boxSize={{ sm: 150, lg: 330 }}
+            boxSize={{ base: 150, lg: 330 }}
           >
             <Image
               src="/assets/digital-lil-white.svg"
@@ -32,7 +32,7 @@ export const HeroImageGrid: React.FC = () => {
         </Center>
       </GridItem>
 
-      <GridItem py={{ sm: 4, lg: 8 }} order={{ md: 1 }}>
+      <GridItem py={{ base: 4, lg: 8 }} order={{ md: 1 }}>
         <Box
           bgImage="/assets/lisa-02.jpeg"
           bgPosition="center"
@@ -42,7 +42,7 @@ export const HeroImageGrid: React.FC = () => {
       </GridItem>
 
       <Hide below="md">
-        <GridItem py={{ sm: 4, lg: 8 }} order={{ md: 3 }}>
+        <GridItem py={{ base: 4, lg: 8 }} order={{ md: 3 }}>
           <Box
             bgImage="/assets/lisa-01.jpeg"
             bgPosition="top-center"
