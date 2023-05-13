@@ -38,7 +38,11 @@ export const Footer: React.FC = () => {
                   />
                 </Box>
               ) : null}
-              <Link href={link.url} variant="footer">
+              <Link
+                href={link.url}
+                variant="footer"
+                fontSize={{ base: "lg", md: "2xl" }}
+              >
                 {link.text}
               </Link>
             </Flex>

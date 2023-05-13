@@ -46,7 +46,7 @@ export default function ServicePage() {
               </Heading>
 
               <Text maxW="lg" fontSize="2xl" mb={4}>
-                {service.body}.
+                {service.body}
               </Text>
             </GridItem>
             <GridItem>
@@ -69,10 +69,10 @@ export default function ServicePage() {
                       alt={`A digital lil logo mark`}
                     />
                     <VStack alignItems="flex-start">
-                      <Heading color="secondary.base" mb="0" fontSize="sm">
+                      <Heading color="secondary.base" mb="0" fontSize="md">
                         {feature.title}
                       </Heading>
-                      <Text>{feature.body}</Text>
+                      <Text color="secondary.dark">{feature.body}</Text>
                     </VStack>
                   </HStack>
                 ))}

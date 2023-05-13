@@ -31,7 +31,6 @@ export const SERVICES: Service[] = [
   {
     slug: "social-media-management",
     title: "Social Media Management",
-    intro: "Let us manage, run & build your brand voice and awareness.",
     icon: {
       url: "/svg/iconmark-01.svg",
       height: 60,
@@ -56,38 +55,89 @@ export const SERVICES: Service[] = [
   {
     slug: "meta-platform-paid-ads",
     title: "Meta Platform Paid Ads",
-    intro:
-      "Target highly specific, pre-defined audiences anywhere in the world.",
     icon: {
       url: "/svg/iconmark-02.svg",
       height: 60,
       width: 60,
     },
-    body: "",
-    features: [],
+    body: `Boost your social media strategy with highly targeted Paid Ads. As organic reach declines, Paid Ads are crucial. We set up and run your ads for results and ROI. We monitor platform changes to ensure continued success.`,
+    features: [
+      {
+        title: "Audiences",
+        body: "Paid ads can target specific audiences globally",
+      },
+      {
+        title: "Paid social advertising",
+        body: "Organic social reach is declining, so paid social advertising is crucial",
+      },
+      {
+        title: "Don't waste budget",
+        body: "Setting up paid ads incorrectly can waste your budget",
+      },
+      {
+        title: "Trained professionals",
+        body: "We are trained to set up and run your ads correctly for results and return on investment",
+      },
+      {
+        title: "Monitor changes",
+        body: "We monitor platform changes and adjust your ads for continued success.",
+      },
+    ],
   },
   {
     slug: "social-media-training",
     title: "Social media training",
-    intro: "Let us manage, run & build your brand voice and awareness.",
     icon: {
       url: "/svg/iconmark-03.svg",
       height: 60,
       width: 60,
     },
-    body: "",
-    features: [],
+    body: `Get a 1-hour deep dive into social media strategy or Facebook Ads with our expert team. Gain valuable insights and recommendations to move your business forward. Perfect for newbies or those looking to improve their current efforts.`,
+    features: [
+      {
+        title: "Deep dive",
+        body: "1-hour deep dive into social media strategy or Facebook Ads",
+      },
+      {
+        title: "Valuable insights",
+        body: "Expert team provides valuable insights and recommendations",
+      },
+      {
+        title: "Move forward",
+        body: "Move your business forward with confidence",
+      },
+      {
+        title: "Suitable for beginners",
+        body: "Suitable for newbies or those looking to improve current efforts",
+      },
+    ],
   },
   {
     slug: "email-marketing",
     title: "Email Marketing",
-    intro: "Reach the audience who have already engaged with your brand.",
     icon: {
       url: "/svg/iconmark-04.svg",
       height: 60,
       width: 60,
     },
-    body: "",
-    features: [],
+    body: `Engage with your brand's audience by targeting those who have already interacted with you. Our team creates customised email flows, newsletters, and campaigns using specialised software to segment and remind customers, keeping them engaged with your brand.`,
+    features: [
+      {
+        title: "Target audience",
+        body: "Target audience that has engaged with your brand",
+      },
+      {
+        title: "Customisation",
+        body: "Customised email flows, newsletters, and campaigns",
+      },
+      {
+        title: "Specialised software",
+        body: "Specialised software used for segmentation and customer reminders",
+      },
+      {
+        title: "Brand engagement",
+        body: "Keep your audience engaged with your brand",
+      },
+    ],
   },
 ];

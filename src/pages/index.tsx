@@ -19,7 +19,7 @@ export default function Home() {
       </HeroWrapper>
 
       <Container maxW="1400px" pt={16}>
-        <Services />
+        <Services showIntroduction />
       </Container>
     </Layout>
   );

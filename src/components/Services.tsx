@@ -7,32 +7,42 @@ import {
   GridItem,
   Heading,
   Highlight,
+  LinkBox,
+  LinkOverlay,
   Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
 
-export const Services: React.FC = () => {
+interface ServicesPageProps {
+  showIntroduction?: boolean;
+}
+
+export const Services: React.FC<ServicesPageProps> = ({ showIntroduction }) => {
   return (
     <React.Fragment>
-      <Heading as="h2" size="lg">
-        <Highlight query="." styles={{ color: "accent.base" }}>
-          Services.
-        </Highlight>
-      </Heading>
+      {showIntroduction && (
+        <React.Fragment>
+          <Heading as="h2" size="lg">
+            <Highlight query="." styles={{ color: "accent.base" }}>
+              Services.
+            </Highlight>
+          </Heading>
 
-      <Text maxW="sm" fontSize="lg" mb={16}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-        dolor sit amet
-        <Highlight query="." styles={{ color: "accent.base" }}>
-          .
-        </Highlight>
-      </Text>
+          <Text maxW="lg" fontSize="lg" mb={16}>
+            <Highlight query="." styles={{ color: "accent.base" }}>
+              We offer Social Media Management, Meta Platform Paid Ads, Social
+              Media Training, and Email Marketing services to help you grow your
+              brand online .
+            </Highlight>
+          </Text>
+        </React.Fragment>
+      )}
 
       <Grid templateColumns={{ md: "1fr 1fr" }} gap={8}>
         {SERVICES.map((service, idx) => (
           <GridItem key={idx}>
-            <Card bg="white" p={4}>
+            <LinkBox as={Card} bg="white" p={8} gap={8}>
               <Box as="figure">
                 <Image
                   src={service.icon.url}
@@ -46,15 +56,20 @@ export const Services: React.FC = () => {
                 <Heading as="h3" size="md" color="secondary.base" mb={2}>
                   {service.title}
                 </Heading>
-                <Text color="secondary.dark" mb={8}>
-                  {service.intro}
+                <Text color="secondary.dark" mb={4}>
+                  {service.body.substring(0, 125)}...
                 </Text>
 
-                <Link variant="common" href={`/services/${service.slug}`}>
+                <LinkOverlay
+                  as={Link}
+                  href={`/services/${service.slug}`}
+                  color="accent.base"
+                  fontWeight="700"
+                >
                   Find out more
-                </Link>
+                </LinkOverlay>
               </Box>
-            </Card>
+            </LinkBox>
           </GridItem>
         ))}
       </Grid>

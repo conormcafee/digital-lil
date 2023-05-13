@@ -18,7 +18,6 @@ export type ServiceFeature = {
 export type Service = {
   slug: string;
   title: string;
-  intro: string;
   icon: WordmarkIcon;
   body: string;
   features: ServiceFeature[];

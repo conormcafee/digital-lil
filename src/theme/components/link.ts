@@ -25,7 +25,6 @@ export const footer = defineStyle({
   color: "white",
   textDecoration: "none",
   fontWeight: "700",
-  fontSize: "2xl",
 
   _hover: {
     color: "accent.base",
