@@ -26,7 +26,10 @@ export default function ServicePage() {
   if (!service) return null;
 
   return (
-    <Layout pageTitle={`${router.query.slug}: Digital Lil`}>
+    <Layout
+      pageTitle={`Digital Lil: Services - ${service.title}`}
+      description={service.body}
+    >
       <HeroWrapper>
         <Container maxW="1400px" py={16}>
           <Grid templateColumns={{ md: "1fr 1fr" }}>

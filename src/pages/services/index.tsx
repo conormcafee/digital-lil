@@ -1,11 +1,12 @@
 import { HeroWrapper } from "@/components/HeroWrapper";
 import { Layout } from "@/components/Layout";
 import { Services as ServicesList } from "@/components/Services";
+import { SERVICES_PAGE as content } from "@/constants";
 import { Container, Heading, Highlight, Text } from "@chakra-ui/react";
 
-export default function Services() {
+export default function ServicesPage() {
   return (
-    <Layout pageTitle={`Digital Lil: Services`}>
+    <Layout pageTitle={`Digital Lil: Services`} description={content.body}>
       <HeroWrapper>
         <Container maxW="1400px" py={16}>
           <Heading>
@@ -16,12 +17,7 @@ export default function Services() {
 
           <Text maxW="lg" fontSize="2xl" mb={4}>
             <Highlight query="." styles={{ color: "accent.base" }}>
-              Our comprehensive range of services can help grow your brand
-              online. Services include Social Media Management, Meta Platform
-              Paid Ads, Social Media Training, and Email Marketing. Our experts
-              develop customized strategies to connect with your audience,
-              increase online presence, and boost revenue. Trust us to take your
-              brand to the next level.
+              {content.body}
             </Highlight>
           </Text>
         </Container>

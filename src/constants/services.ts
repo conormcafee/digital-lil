@@ -1,30 +1,14 @@
-import { NavigationLink, Service } from "./types";
+import { Service } from "@/types";
 
-export const NAV_LINKS: NavigationLink[] = [
-  { text: "About", url: "/about" },
-  { text: "Services", url: "/services" },
-];
-
-export const FOOTER_LINKS: NavigationLink[] = [
-  {
-    text: "Call us on +44 (0)79 6876 1869",
-    url: "tel:+447968761869",
-    icon: {
-      url: "/svg/iconmark-02.svg",
-      height: 60,
-      width: 60,
-    },
-  },
-  {
-    text: "Email lisa@digitiallil.com",
-    url: "mailto:lisa@digitiallil.com",
-    icon: {
-      url: "/svg/iconmark-01.svg",
-      height: 60,
-      width: 60,
-    },
-  },
-];
+export const SERVICES_PAGE = {
+  name: "Services",
+  body: `Our comprehensive range of services can help grow your brand
+  online. Services include Social Media Management, Meta Platform
+  Paid Ads, Social Media Training, and Email Marketing. Our experts
+  develop customized strategies to connect with your audience,
+  increase online presence, and boost revenue. Trust us to take your
+  brand to the next level.`,
+};
 
 export const SERVICES: Service[] = [
   {
