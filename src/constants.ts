@@ -3,7 +3,6 @@ import { NavigationLink, Service } from "./types";
 export const NAV_LINKS: NavigationLink[] = [
   { text: "About", url: "/about" },
   { text: "Services", url: "/services" },
-  { text: "Get in Touch", url: "/get-in-touch" },
 ];
 
 export const FOOTER_LINKS: NavigationLink[] = [
