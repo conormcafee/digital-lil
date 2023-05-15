@@ -2,6 +2,7 @@ import { HeroImageGrid } from "@/components/HeroImageGrid";
 import { HeroWrapper } from "@/components/HeroWrapper";
 import { Layout } from "@/components/Layout";
 import { SERVICES } from "@/constants";
+import { Link } from "@chakra-ui/next-js";
 import {
   Container,
   Grid,
@@ -30,14 +31,14 @@ export default function ServicePage() {
         <Container maxW="1400px" py={16}>
           <Grid templateColumns={{ md: "1fr 1fr" }}>
             <GridItem>
-              <Heading
-                fontSize="sm"
+              <Link
                 color="accent.base"
                 mb={1}
-                textTransform="uppercase"
+                href="/services"
+                fontWeight="700"
               >
-                We provide:
-              </Heading>
+                Services /{" "}
+              </Link>
 
               <Heading>
                 <Highlight query="." styles={{ color: "accent.base" }}>
