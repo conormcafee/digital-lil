@@ -95,32 +95,4 @@ export const SERVICES: Service[] = [
       },
     ],
   },
-  {
-    slug: "email-marketing",
-    title: "Email Marketing",
-    icon: {
-      url: "/svg/iconmark-04.svg",
-      height: 60,
-      width: 60,
-    },
-    body: `Engage with your brand's audience by targeting those who have already interacted with you. Our team creates customised email flows, newsletters, and campaigns using specialised software to segment and remind customers, keeping them engaged with your brand.`,
-    features: [
-      {
-        title: "Target audience",
-        body: "Target audience that has engaged with your brand",
-      },
-      {
-        title: "Customisation",
-        body: "Customised email flows, newsletters, and campaigns",
-      },
-      {
-        title: "Specialised software",
-        body: "Specialised software used for segmentation and customer reminders",
-      },
-      {
-        title: "Brand engagement",
-        body: "Keep your audience engaged with your brand",
-      },
-    ],
-  },
 ];
