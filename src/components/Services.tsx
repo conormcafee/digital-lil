@@ -31,9 +31,9 @@ export const Services: React.FC<ServicesPageProps> = ({ showIntroduction }) => {
 
           <Text maxW="lg" fontSize="lg" mb={16}>
             <Highlight query="." styles={{ color: "accent.base" }}>
-              We offer Social Media Management, Meta Platform Paid Ads, Social
-              Media Training, and Email Marketing services to help you grow your
-              brand online .
+              We offer Social Media Management, Meta Platform Paid Ads, and
+              Social Media Training services to help you grow your brand online
+              .
             </Highlight>
           </Text>
         </React.Fragment>

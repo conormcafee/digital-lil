@@ -4,7 +4,7 @@ export const SERVICES_PAGE = {
   name: "Services",
   body: `Our comprehensive range of services can help grow your brand
   online. Services include Social Media Management, Meta Platform
-  Paid Ads, Social Media Training, and Email Marketing. Our experts
+  Paid Ads, and Social Media Training. Our experts
   develop customized strategies to connect with your audience,
   increase online presence, and boost revenue. Trust us to take your
   brand to the next level.`,
